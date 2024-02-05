@@ -1,0 +1,49 @@
+.interaction{
+    gap: 7px;
+}
+
+.interaction i {
+    font-size: 20px; /* Changer la taille de l'icône */
+    margin-bottom: 5px; /* Ajouter un espace entre l'icône et le texte */
+    cursor: pointer;
+}
+
+.interaction span {
+    font-weight: small; /* Mettre le texte en gras */
+    color: #333; /* Choisir une couleur pour le texte */
+    font-size: 19px; /* Changer la taille du texte */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.interaction i:hover{
+    color: blue;
+}
+.blue-icon {
+    color: blue;
+    
+  }
+  
+
+.interactionComnts{
+    gap: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.cardComnt{
+    background-color: rgb(171, 171, 166);
+    color: black;
+}
+.contentComnts{
+    gap: 10px;
+}
+.bodyContent{
+    min-width: 200px;
+}
+.userPost{
+    gap: 10px;
+}
+textarea{
+    resize: none;
+    height:fit-content ;
+}
+  

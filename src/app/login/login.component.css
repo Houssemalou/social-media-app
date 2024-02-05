@@ -1,0 +1,10 @@
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    font-size: small;
+}
+button{
+    width: 100%;
+}

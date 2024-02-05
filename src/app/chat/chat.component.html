@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="../../assets/images/p6.jpg" class="ml-3 rounded-circle" style="width: 35px; height: 35px;">
+          <p class="ml-3 mb-1">aloui rayen</p>
+        </div>
+        <div>
+          <i class="fas fa-video text-primary mx-2"></i> 
+          <i class="fas fa-phone-alt text-primary mx-2"></i> 
+        </div>
+      </div>
+      
+      <div class="card-body" style="height: 300px; overflow-y: auto;">
+        <!-- Messages -->
+        <div *ngFor="let message of messages" class="media d-flex mt-2" [ngClass]="{'justify-content-end': message.isMe, 'justify-content-start': !message.isMe}">
+          <div *ngIf="!message.isMe" class="sender">
+            <img  src="../../assets/images/p5.jpg" class="mr-3 rounded-circle connected-cercle"  style="width: 35px; height: 35px;">
+            <div class="connected-circle"></div>
+          </div>
+          <div class="media-body mr-5 pt-2 ps-2" [ngClass]="{'me-body': message.isMe, 'sender-body': !message.isMe}">
+            <p class="mt-0">{{ message.content }}</p>
+          </div>
+          <img *ngIf="message.isMe" src="../../assets/images/p1.jpg" class="ml-3 rounded-circle"  style="width: 35px; height: 35px;">
+        </div>
+      </div>
+      <div class="card-footer">
+        <!-- Input field and send button -->
+        <div class="input-group">
+          <input [(ngModel)]="newMessage" type="text" class="form-control mx-2" placeholder="Type your message...">
+          <div class="input-group-append">
+            <button (click)="sendMessage()" class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,61 @@
+<div class="card mb-3">
+    <div class="card-body">
+      <div class=" d-flex userPost">
+        <img src="../../assets/images/bubble.png" class="float-start cercle" width="30px" height="30px" alt="">
+        <h5 class="card-title">{{ examplePost.userName }}</h5>
+      </div>
+      <p class="card-text">{{ examplePost.content }}</p>
+      <img src="../../assets/images/background.png" class="img-fluid rounded mb-3" alt="Post Image">
+      <p class="card-text">{{ examplePost.content }}</p>
+      <hr>
+      <div class="d-flex justify-content-around align-items-center">
+        <!-- Like -->
+        <div class="d-flex interaction">
+          <i class="fas fa-thumbs-up m-auto"></i>
+          <span class="opacity-50">like</span>
+        </div>
+        <!-- Dislike -->
+        <div class="d-flex interaction">
+          <i class="fas fa-thumbs-down m-auto"></i>
+          <span class="opacity-50">dislike</span>
+        </div>
+        <!-- Comments -->
+        <div class="d-flex interaction">
+          <i class="far fa-comment m-auto" (click)="showComments()"></i>
+          <span class="opacity-50">comments</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <textarea id="message-input" class="form-control mt-3"  placeholder="Add a comment..."></textarea>
+          <div class=" d-flex justify-content-end">
+            <button id="envoyer" type="button" class="btn btn-primary mt-2">Add</button>
+          </div>
+          
+      </div>
+      </div>
+      
+  
+      <!-- Display comments -->
+      <div *ngIf="showCommentsFlag">
+        <hr>
+        <div *ngFor="let comment of examplePost.comments" class="mb-3">
+          <div class="d-block">
+            <div class="d-flex contentComnts">
+              <img src="../../assets/images/bubble.png" class="float-start cercle" width="30px" height="30px" alt="">
+              <div class="card pt-2 ps-2 bodyContent">
+                <small class="opacity-75">{{ comment.userName }}</small> 
+                <p>{{ comment.text }}</p>
+              </div>
+            </div>
+            
+            <div class="d-flex interactionComnts ">
+                <small class="opacity-50">Like {{numbreLikes}}</small>
+                <small class="opacity-50">Dislike {{numbreDisLikes}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

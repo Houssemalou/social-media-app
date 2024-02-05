@@ -1,0 +1,19 @@
+form{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: transparent;
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    font-size: small;
+}
+button{
+    width: 100%;
+}
