@@ -1,0 +1,17 @@
+.card{
+    max-height: 700px;
+    overflow-y: auto;
+}
+.sender-information {
+    gap: 10px;
+}
+.btns{
+    gap: 10px;
+}
+.btns button{
+    width: fit-content;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+}

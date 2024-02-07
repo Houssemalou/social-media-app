@@ -1,0 +1,40 @@
+.card {
+    
+    margin: 20px auto;
+}
+.profile-picture {
+    position: relative;
+    text-align: start;
+    margin-top: -50px; /* Adjust as needed */
+    margin-left: 50px;
+}
+.card-title{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.change-picture-btn {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+.user{
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+.posts{
+    gap: 20px;
+}
+.btn2{
+    border: none;
+    color: rgb(36, 35, 35);
+}
+.card-text{
+    gap: 80px;
+}
+  

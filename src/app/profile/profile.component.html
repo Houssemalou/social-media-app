@@ -1,1 +1,81 @@
-<p>profile works!</p>
+<div class="container mt-5">
+    <!-- User Profile Card -->
+    <div class="card">
+      <img src="../../assets/images/p3.jpg" class="card-img-top" alt="Cover Photo">
+      <div>
+        <div class="row profile-picture d-flex">
+            <div class="col-sm-3">
+                <img src="../../assets/images/p4.jpg" class="rounded-circle ml-3" alt="Profile Picture">
+            </div>
+            <div class="user col-sm-9  m-auto">
+                <strong class="card-title">John Doe</strong>
+                <p class="opacity-50">1.5k friends</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <form class="">
+                <div class="form-group">
+                    <label for="fileInput"></label>
+                    <input type="file"  id="fileInput">
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 ">Envoyer</button>
+            </form>
+        </div>
+      </div>
+      <div class="card-body">
+        <hr>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Friends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+        </ul>
+     </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-body">
+                      <div class="card-text d-inline-block">
+                        <div>
+                          <i class="fas fa-graduation-cap"></i> Studied Computer Science<br>
+                        </div>
+                        <div>
+                          <i class="fas fa-graduation-cap "></i> Studied Computer Science<br>
+                        </div>
+                        <div>
+                          <i class="fas fa-graduation-cap "></i> Studied Computer Science<br>
+                        </div>
+                        <div>
+                          <i class="fas fa-graduation-cap "></i> Studied Computer Science<br>
+                        </div>
+                        <div>
+                          <i class="fas fa-graduation-cap "></i> Studied Computer Science<br>
+                        </div>
+                        <div>
+                          <i class="fas fa-map-marker-alt "></i> Lives in New York, USA<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary w-100 bg-transparent btn2">Edit Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="posts col-md-8 ml-2">
+                <app-posts></app-posts>
+                <app-posts></app-posts>
+                <app-posts></app-posts>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  
+  

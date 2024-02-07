@@ -1,4 +1,4 @@
-<div class="card mb-3">
+<div class="card mb-3 mt-3">
     <div class="card-body">
       <div class=" d-flex userPost">
         <img src="../../assets/images/bubble.png" class="float-start cercle" width="30px" height="30px" alt="">
@@ -12,17 +12,17 @@
         <!-- Like -->
         <div class="d-flex interaction">
           <i class="fas fa-thumbs-up m-auto"></i>
-          <span class="opacity-50">like</span>
+          <span class="opacity-50 d-none d-md-block ">like</span>
         </div>
         <!-- Dislike -->
         <div class="d-flex interaction">
           <i class="fas fa-thumbs-down m-auto"></i>
-          <span class="opacity-50">dislike</span>
+          <span class="opacity-50 d-none d-md-block">dislike</span>
         </div>
         <!-- Comments -->
         <div class="d-flex interaction">
           <i class="far fa-comment m-auto" (click)="showComments()"></i>
-          <span class="opacity-50">comments</span>
+          <span class="opacity-50 d-none d-md-block">comments</span>
         </div>
       </div>
       <div>

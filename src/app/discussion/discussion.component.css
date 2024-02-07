@@ -1,0 +1,24 @@
+.descussion-Item{
+    height: fit-content;
+    gap: 10px;
+}
+.text-muted{
+    font-size: 8px;
+    font-style: italic;
+}
+li:hover{
+    background-color: rgb(148, 146, 142);
+    cursor: pointer;
+}
+.connected-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+.position-relative{
+    height: fit-content;
+}
