@@ -1,7 +1,4 @@
-.card{
-    max-height: 700px;
-    overflow-y: auto;
-}
+
 .sender-information {
     gap: 10px;
 }

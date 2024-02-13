@@ -1,0 +1,33 @@
+<div class="hero">
+    <div class="nav-bar">
+        <img src="../../assets/images/logo.png" class="logo">
+        <div class="auth d-sm-none"> <!-- Utilisez d-sm-none pour masquer sur les écrans small (sm) -->
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#authButtons">
+                Toggle Auth
+            </button>
+        </div>
+        <div class="auth d-none d-sm-flex collapse" id="authButtons"> <!-- Utilisez d-none pour masquer par défaut, d-sm-flex pour afficher sur les écrans small (sm) -->
+            <a routerLink="login"><button type="submit" class="btn btn-primary" (click)="setAuthHidden()">Sign in</button></a>
+            <a routerLink="register"><button type="submit" class="btn btn-primary" (click)="setAuthHidden()">Sign up</button></a>
+        </div>
+    </div>
+    
+    <div class="d-none d-md-block content">
+        <small>Meet Your Friends</small>
+        <h1>Connect, Share<br> Thrive: Your World<br> Your Voice! 🌐✨</h1>
+    </div>
+    <div class="bubbles">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+        <img src="../../assets/images/bubble.png">
+    </div>
+    <div [hidden]="authHidden" class="register w-sm-100">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+
+        

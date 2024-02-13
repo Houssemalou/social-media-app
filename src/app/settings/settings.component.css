@@ -1,0 +1,21 @@
+.container{
+    width: 300px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.card-body{
+    border:none;
+    
+}
+li{
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: bold;
+}
+li:hover{
+    background-color: rgb(246, 246, 246);
+}

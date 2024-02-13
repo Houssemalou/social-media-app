@@ -9,27 +9,49 @@
           </div>
         </div>
       </form>
-      <div class="d-flex ">
-        <a class="nav-link" href="#"><fa-icon [icon]="faEnvelope" size="xl"></fa-icon></a>
-        <p class="d-none d-md-block nav-text pt-2">Messages</p>
+      <div class="dropdown">
+        <div class="d-flex dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#"><fa-icon [icon]="faEnvelope" size="xl"></fa-icon></a>
+          <p class="d-none d-md-block nav-text pt-2">Messages</p>
+        </div>
+        <app-discussion class="dropdown-menu"></app-discussion>
       </div>
+      
     </div>
     <div class="col-md-6 d-flex justify-content-around">
       <div class="d-flex  text-center">
         <a class="nav-link" href="#"><fa-icon [icon]="faHome" size="xl" color="white"></fa-icon></a>
         <p class="d-none d-md-block nav-text pt-2">Home</p>
       </div>
-      <div class="d-flex text-center">
-        <a class="nav-link" href="#"><fa-icon [icon]="faUser" size="xl"></fa-icon></a>
-        <p class="d-none d-md-block nav-text pt-2 ">Friends</p>
+      <div class="dropdown">
+        <div class="d-flex text-center dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#"><fa-icon [icon]="faUser" size="xl"></fa-icon></a>
+          <p class="d-none d-md-block nav-text pt-2 ">Friends</p>
+        </div>
+        <div class="dropdown-menu">
+          <div class="reception">
+            <app-invitations></app-invitations>
+            <app-suggesations></app-suggesations>
+          </div>
+        </div>
       </div>
-      <div class="d-flex text-center">
-        <a class="nav-link" href="#"><fa-icon [icon]="faBell" size="xl"></fa-icon></a>
-        <p class="d-none d-md-block nav-text pt-2">Notifications</p>
+      <div class="dropdown">
+        <div class="d-flex text-center dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#"><fa-icon [icon]="faBell" size="xl"></fa-icon></a>
+          <p class="d-none d-md-block nav-text pt-2">Notification</p>
+        </div>
+        <div class="dropdown-menu notification">
+          <app-notifications></app-notifications>
+        </div>
       </div>
-      <div class="d-flex text-center">
-        <a class="nav-link" href="#"><fa-icon [icon]="faCog" size="xl"></fa-icon></a>
-        <span class="d-none d-md-block nav-text pt-2">Settings</span>
+      <div class="dropdown">
+        <div class="d-flex text-center dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#"><fa-icon [icon]="faCog" size="xl"></fa-icon></a>
+          <span class="d-none d-md-block nav-text pt-2">Settings</span>
+        </div>
+        <div class="dropdown-menu">
+          <app-settings></app-settings>
+        </div>
       </div>
     </div>
   </div>

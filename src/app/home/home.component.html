@@ -1,33 +1,74 @@
-<div class="hero">
-    <div class="nav-bar">
-        <img src="../../assets/images/logo.png" class="logo">
-        <div class="auth d-sm-none"> <!-- Utilisez d-sm-none pour masquer sur les écrans small (sm) -->
-            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#authButtons">
-                Toggle Auth
-            </button>
+<div class="content">
+    <app-navbar class="card card2 p-3"></app-navbar>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block">
+               <div class="card card1 mt-3">
+                    <div class="card-body">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex align-items-center"><a herf="#"></a>
+                            <img src="https://i.pravatar.cc/50?img=7" alt="Profil" class="img-thumbnail rounded-circle mr-3">
+                            <span class="px-2"><strong>Aloui Houssem</strong></span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fa-brands fa-user-friends fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Friends</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="far fa-clock fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Memories</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-file-audio fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Audio Recordings</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-users fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Groups</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-video fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Videos</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-shopping-cart fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Marketplace</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-comments fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Posts</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="far fa-calendar-alt fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Events</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-bullhorn fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Recent Ad Activity</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-cloud-sun fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Climate Hub</span>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-hand-holding-heart fa-fw me-3 text-primary"></i>
+                            <span class="text-muted">Fundraisers</span>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 posts">
+                <app-generate-post></app-generate-post>
+                <app-posts></app-posts>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <app-list-friends></app-list-friends>
+            </div>
+            <div class="chat">
+              <app-chat></app-chat>
+            </div>
         </div>
-        <div class="auth d-none d-sm-flex collapse" id="authButtons"> <!-- Utilisez d-none pour masquer par défaut, d-sm-flex pour afficher sur les écrans small (sm) -->
-            <a routerLink="login"><button type="submit" class="btn btn-primary" (click)="setAuthHidden()">Sign in</button></a>
-            <a routerLink="register"><button type="submit" class="btn btn-primary" (click)="setAuthHidden()">Sign up</button></a>
-        </div>
-    </div>
-    
-    <div class="d-none d-md-block content">
-        <small>Meet Your Friends</small>
-        <h1>Connect, Share<br> Thrive: Your World<br> Your Voice! 🌐✨</h1>
-    </div>
-    <div class="bubbles">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-        <img src="../../assets/images/bubble.png">
-    </div>
-    <div [hidden]="authHidden" class="register w-sm-100">
-      <router-outlet></router-outlet>
     </div>
 </div>
 
-        

@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header text-center">
+    Create a post
+  </div>
+  <div class="card-body">
+    <div class="user-info d-flex align-items-center mb-3">
+      <img src="https://i.pravatar.cc/50?img=7" alt="User Image" class="rounded-circle mr-2"/>
+      <div class="name d-block mt-2">
+        <strong>Aloui Houssem</strong> 
+        <p>🌐 Public</p>
+      </div>
+    </div>
+    <textarea class="form-control mb-3" placeholder="What's new, Aloui ?"></textarea>
+    <div class="add-image d-flex justify-content-center text-align-center position-relative" [ngClass]="{'d-block': isAddFile, 'd-none': !isAddFile}">
+      <div class="close position-absolute">
+        <button type="button" class="btn-close position-absolute" aria-label="Close" (click)="setIsAddFile()" ></button>
+      </div>
+      <div class="file-content mt-4 d-flex justify-content-center align-items-center">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <input type="file" class="form-control-file" id="file" name="file">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="confirm">
+      <button type="button" class="btn btn-light btn-block mb-3" (click)="setIsAddFile()">
+        Add photos/videos
+      </button>
+      <button type="button" class="btn btn-primary">Post</button>
+    </div>
+  </div>
+</div>
+
+<!-- Incluez Bootstrap CSS -->

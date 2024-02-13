@@ -4,3 +4,12 @@ input{
 .nav{
     row-gap: 5px;
 }
+app-discussion{
+    width:350px;
+}
+.reception{
+    max-height: 600px;
+    width: 310px;
+    overflow-y: auto;
+}
+

@@ -1,0 +1,29 @@
+.row{
+    max-width: 350px;
+}
+.reduced{
+    max-height: 500px;
+    overflow-y: hidden;
+}
+.expanded{
+    max-height: 500px;
+    overflow-y: auto;
+}
+li{
+    width: 295px;
+    max-height: 100px;
+  
+    border: none;
+    margin-top: 2px;
+}
+li:hover{
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+.notif-item{
+    gap: 10px;
+}
+span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,5 +1,5 @@
 .items{
-    background: transparent;
+    background: transparent !important;
 }
 .connected-circle {
     position: absolute;
@@ -13,4 +13,8 @@
 .position-relative{
     height: fit-content;
     width: fit-content;
+}
+a{
+    border: none;
+    background: transparent;
 }

@@ -10,6 +10,18 @@ import { FormsModule} from '@angular/forms';
   styleUrl: './chat.component.css'
 })
 export class ChatComponent {
+  chatIsHidden:boolean = false;
+  isMinus : boolean = false;
+  
+  setChatIsHidden(){
+     this.chatIsHidden = true;
+  }
+  setIsMinus(){
+    this.isMinus = true;
+  }
+  setIsExpand(){
+    this.isMinus = false;
+  }
   messages: { sender: string, content: string, isMe: boolean }[] = [
     { sender: 'Friend', content: 'Hello!', isMe: false },
     { sender: 'Me', content: 'Hi there!', isMe: true },

@@ -1,0 +1,80 @@
+<div class="container mt-1">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Notifications</h5>
+          </div>
+          <ul class="list-group list-group-flush " [ngClass]="{'reduced': isReduced, 'expanded': !isReduced}">
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between ">
+                  <div class="d-flex notif-item">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mr-2" width="30" height="30" alt="John Doe">
+                    <span class="font-weight-bold ml-2"><strong> Ali Zitouna</strong>a réagi à une publication.</span> 
+                  </div>
+                  <small class="text-muted">il y a 4 jours</small>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <div class="d-flex  notif-item">
+                    <img src="https://randomuser.me/api/portraits/women/85.jpg" class="rounded-circle mr-2" width="30" height="30" alt="Jane Doe">
+                    <span class="font-weight-bold ml-1"><strong>Hedi Benamor</strong> a mentionné votre nom,  dans un commentaire...</span>
+                  </div>
+                  <small class="text-muted">il y a 5 jours</small>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <div class="d-flex  notif-item">
+                    <img src="https://randomuser.me/api/portraits/men/95.jpg" class="rounded-circle mr-2" width="30" height="30" alt="John Doe">
+                    <span class="font-weight-bold ml-1"><strong>helmi selmi</strong>et 11 autres personnes ont réagi à une photo.</span> 
+                  </div>
+                  <small class="text-muted">il y a 6 jours</small>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <div class="d-flex  notif-item">
+                    <img src="https://randomuser.me/api/portraits/women/70.jpg" class="rounded-circle mr-2" width="30" height="30" alt="Jane Doe">
+                    <span class="font-weight-bold ml-1"><strong>Laila Ben Ali</strong>a publié une nouvelle vidéo : "من أجمل و... كثر الصناعات التقليدية اليدوية اللي..."</span> 
+                  </div>
+                  <small class="text-muted">il y a une semaine</small>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <div class="d-flex  notif-item">
+                        <img src="https://randomuser.me/api/portraits/men/80.jpg" class="rounded-circle mr-2" width="30" height="30" alt="John Doe">
+                        <span class="font-weight-bold ml-1"><strong>Walid Tounsi</strong> a partagé votre publication.</span>
+                    </div>
+                    <small class="text-muted">il y a 2 semaines</small>
+                </div>
+            </li>
+            <li *ngIf="isReduced==true" class="list-group-item text-center" (click)="setIsReduced()">
+                <p class="color-blue">Voir toutes les notifications</p>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                  <div class="d-flex  notif-item">
+                      <img src="https://randomuser.me/api/portraits/men/80.jpg" class="rounded-circle mr-2" width="30" height="30" alt="John Doe">
+                      <span class="font-weight-bold ml-1"><strong>Walid Tounsi</strong> a partagé votre publication.</span>
+                  </div>
+                  <small class="text-muted">il y a 2 semaines</small>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <div class="d-flex  notif-item">
+                    <img src="https://randomuser.me/api/portraits/men/80.jpg" class="rounded-circle mr-2" width="30" height="30" alt="John Doe">
+                    <span class="font-weight-bold ml-1"><strong>Walid Tounsi</strong> a partagé votre publication.</span>
+                </div>
+                <small class="text-muted">il y a 2 semaines</small>
+            </div>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+    
